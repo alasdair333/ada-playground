@@ -57,7 +57,7 @@ package body Map is
     Next_Index : Natural := Index_List'First;
     XY : Point;
  begin
-   Space_Index := Index(line, " ");
+   Space_Index := SF.Index(line, " ");
 
    XY.Y := Integer'Value(line(line'first..Space_Index));
    XY.X := Integer'Value(line(Space_Index+1..line'Last));

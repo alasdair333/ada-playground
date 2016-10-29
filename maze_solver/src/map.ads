@@ -3,12 +3,12 @@
 -- Based on the programming challenge https://www.hackerrank.com/challenges/pacman-dfs
 
 with Ada.Text_IO; use Ada.Text_IO;
-with Ada.Strings.Fixed; use Ada.Strings.Fixed;
+with Ada.Strings.Fixed;
 with Ada.Strings.Unbounded;
 
 package Map is
   package SU renames Ada.Strings.Unbounded;
-
+  package SF renames Ada.Strings.Fixed;
   type Grid is array(Positive range <>) of SU.Unbounded_String;
 
   type Point is record
