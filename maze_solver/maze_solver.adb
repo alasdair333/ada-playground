@@ -22,4 +22,6 @@ begin
     Put_Line(SU.To_String(maze.layout(l)));
   end loop;
 
+
+
 end maze_solver;
