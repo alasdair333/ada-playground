@@ -46,4 +46,9 @@ package body Fifo is
       return List.Head = null;
    end Is_Empty;
 
+   procedure Clear_Queue (List : in out Fifo_Type) is
+   begin
+      List.Head := null;
+  end Clear_Queue;
+
 end Fifo;

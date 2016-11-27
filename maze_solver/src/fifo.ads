@@ -8,6 +8,7 @@ package Fifo is
    procedure Push(List : in out Fifo_Type; Item : in Element_Type);
    procedure Pop(List : in out Fifo_Type; Item : out Element_Type);
    function Is_Empty(List : Fifo_Type) return Boolean;
+   procedure Clear_Queue (List : in out Fifo_Type);
    Empty_Error : exception;
 private
    type Fifo_Element;
